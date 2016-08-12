@@ -38,6 +38,9 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
     var sortCellCollapse: Bool = false
     var cuisineCategoryCollapse: Bool = true
 
+    var sortTransition: Bool = true
+    var distanceTransition: Bool = true
+
     @IBAction func onCancelButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
@@ -249,7 +252,6 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
 
             if(distanceCellCollapse == true){
                 self.distanceIdx = indexPath.row
-
             }
 
             self.tableView.reloadSections(sectionToReload, withRowAnimation: .Fade)
@@ -283,16 +285,24 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
 
-
     func cuisineCategoryCellDidToggle(cuisineCategoryCell: CuisineCategoryCell, newValue: Bool) {
         let indexPath = tableView.indexPathForCell(cuisineCategoryCell)!
         cuisineSwitchStates[indexPath.row] = newValue
     }
 
 
+
+    @IBAction func didToggleYelpSwitch(sender: YelpSwitchButton) {
+        self.isOfferDeal = !sender.on
+        
+    }
+
+
     @IBAction func didToggleDealSwitch(sender: AnyObject) {
         self.isOfferDeal = sender.on
     }
+
+
 
     /*
      // MARK: - Navigation

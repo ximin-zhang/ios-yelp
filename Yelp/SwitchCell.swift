@@ -18,13 +18,11 @@ class SwitchCell: UITableViewCell {
     
     @IBOutlet weak var onSwitch: UISwitch! 
 
+    @IBOutlet weak var yelpSwitchUIButton: YelpSwitchButton!
+
     weak var delegate: SwitchCellDelegate?
 
-//    var filterRowIdentifier: FilterRowIdentifier! {
-//        didSet {
-//            switchLabel?.text = filterRowIdentifier?.rawValue
-//        }
-//    }
+//    var yelpSwitchOn: Bool = false
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,7 +30,8 @@ class SwitchCell: UITableViewCell {
 
         onSwitch.addTarget(self, action: #selector(SwitchCell.switchValueChanged), forControlEvents: UIControlEvents.ValueChanged)
 
-        
+//        yelpSwitchUIButton.addTarget(self, action: #selector(SwitchCell.touchDownYelpSwitch), forControlEvents: UIControlEvents.ValueChanged)
+
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -44,5 +43,19 @@ class SwitchCell: UITableViewCell {
     func switchValueChanged(){
         print("(Offer a deal) switch value changed")
         delegate?.switchCell?(self, didChangeValue: onSwitch.on)
+
     }
+
+    @IBAction func touchDownYelpSwitch(sender: YelpSwitchButton) {
+        sender.on = !sender.on
+        if(sender.on ){
+            yelpSwitchUIButton.setImage(UIImage(named: "SwitchOn"), forState: .Normal)
+        }else{
+            yelpSwitchUIButton.setImage(UIImage(named: "SwitchOff"), forState: .Normal)
+        }
+
+
+        delegate?.switchCell?(self, didChangeValue: sender.on)
+    }
+
 }

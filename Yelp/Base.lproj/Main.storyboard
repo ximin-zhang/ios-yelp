@@ -17,12 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5FC-SX-7mU">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uXX-lr-YCO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5FC-SX-7mU">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessCell" rowHeight="113" id="irC-BM-2Vw" customClass="BusinessCell" customModule="Yelp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="113"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="113"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="irC-BM-2Vw" id="QCP-Zh-C4V">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="112.5"/>
@@ -121,14 +124,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5FC-SX-7mU" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" id="2Vg-vt-IOF"/>
                             <constraint firstItem="VBY-gq-v8E" firstAttribute="top" secondItem="5FC-SX-7mU" secondAttribute="bottom" id="8Eg-en-67u"/>
                             <constraint firstItem="VBY-gq-v8E" firstAttribute="top" secondItem="5FC-SX-7mU" secondAttribute="bottom" id="G8L-Wn-tpH"/>
                             <constraint firstAttribute="trailing" secondItem="5FC-SX-7mU" secondAttribute="trailing" id="Mh4-HK-s5U"/>
+                            <constraint firstItem="5FC-SX-7mU" firstAttribute="top" secondItem="hR0-74-jRp" secondAttribute="bottom" id="RZt-T2-Us2"/>
+                            <constraint firstItem="VBY-gq-v8E" firstAttribute="top" secondItem="uXX-lr-YCO" secondAttribute="bottom" id="Tqa-7B-7pT"/>
                             <constraint firstItem="5FC-SX-7mU" firstAttribute="leading" secondItem="XhR-oz-92f" secondAttribute="leading" id="cgl-NA-1bx"/>
-                            <constraint firstItem="5FC-SX-7mU" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" id="ftn-Hz-x8v"/>
                             <constraint firstAttribute="trailing" secondItem="5FC-SX-7mU" secondAttribute="trailing" id="gb8-65-nje"/>
+                            <constraint firstItem="uXX-lr-YCO" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" id="kWj-nu-Dmw"/>
                             <constraint firstItem="5FC-SX-7mU" firstAttribute="leading" secondItem="XhR-oz-92f" secondAttribute="leading" id="neo-yy-VoR"/>
+                            <constraint firstItem="uXX-lr-YCO" firstAttribute="leading" secondItem="XhR-oz-92f" secondAttribute="leading" id="p3E-mB-Scr"/>
+                            <constraint firstAttribute="trailing" secondItem="uXX-lr-YCO" secondAttribute="trailing" id="xaT-Od-ygA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yelp" id="7AX-ia-ei0">
@@ -137,9 +143,16 @@
                                 <segue destination="crV-8r-rTX" kind="modal" id="HU3-a9-GjN"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="Czt-4A-ewr">
+                            <connections>
+                                <action selector="onTap:" destination="2xI-yr-O5N" id="vkM-cq-taf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mapView" destination="uXX-lr-YCO" id="S25-0h-VOM"/>
                         <outlet property="tableView" destination="5FC-SX-7mU" id="COT-Zj-zbJ"/>
+                        <outlet property="viewType" destination="Czt-4A-ewr" id="hpX-ov-R3S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgb-4b-F1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,12 +188,20 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vsX-4g-30V">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" onImage="SwitchOn" offImage="SwitchOff" translatesAutoresizingMaskIntoConstraints="NO" id="vsX-4g-30V" customClass="YelpSwitch" customModule="Yelp" customModuleProvider="target">
                                                     <rect key="frame" x="263" y="3" width="51" height="31"/>
                                                     <connections>
-                                                        <action selector="didToggleDealSwitch:" destination="FVk-34-2ie" eventType="valueChanged" id="pjZ-m3-ct7"/>
+                                                        <action selector="didToggleDealSwitch:" destination="FVk-34-2ie" eventType="valueChanged" id="hJd-Oq-Ijh"/>
                                                     </connections>
                                                 </switch>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0G-xe-duU" customClass="YelpSwitchButton" customModule="Yelp" customModuleProvider="target">
+                                                    <rect key="frame" x="239" y="-2" width="77" height="43.5"/>
+                                                    <state key="normal" title="Button" image="SwitchOff"/>
+                                                    <connections>
+                                                        <action selector="didToggleYelpSwitch:" destination="FVk-34-2ie" eventType="touchUpInside" id="uef-Y0-Tps"/>
+                                                        <action selector="touchDownYelpSwitch:" destination="rwc-e3-vpe" eventType="touchUpInside" id="Jkv-sR-WNQ"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="fbP-DU-vYH" firstAttribute="leading" secondItem="kPw-JR-Ivz" secondAttribute="leading" constant="8" id="B3g-RF-fib"/>
@@ -192,6 +213,7 @@
                                         <connections>
                                             <outlet property="onSwitch" destination="vsX-4g-30V" id="Ou4-vA-ptn"/>
                                             <outlet property="switchLabel" destination="fbP-DU-vYH" id="ogg-yp-O49"/>
+                                            <outlet property="yelpSwitchUIButton" destination="r0G-xe-duU" id="K45-bN-Auq"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DistanceCell" id="c6E-Jd-ZfD" customClass="DistanceCell" customModule="Yelp" customModuleProvider="target">
@@ -336,5 +358,7 @@
     </scenes>
     <resources>
         <image name="CircleIcon" width="128" height="128"/>
+        <image name="SwitchOff" width="223" height="101"/>
+        <image name="SwitchOn" width="223" height="101"/>
     </resources>
 </document>

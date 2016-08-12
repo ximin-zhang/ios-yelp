@@ -18,6 +18,7 @@
 		0BF5F3CA1D5C19BA008663A4 /* CuisineCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5F3C81D5C19BA008663A4 /* CuisineCategoryCell.xib */; };
 		0BF5F3CE1D5C3B1C008663A4 /* SortOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F3CD1D5C3B1C008663A4 /* SortOptions.swift */; };
 		0BF5F3D01D5C3C1A008663A4 /* SortOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F3CF1D5C3C1A008663A4 /* SortOptionCell.swift */; };
+		0BF5F3D41D5DAC20008663A4 /* YelpSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F3D31D5DAC20008663A4 /* YelpSwitchButton.swift */; };
 		222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */; };
 		222D8A6019CCF9F900D2DB53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A5E19CCF9F900D2DB53 /* Main.storyboard */; };
 		222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A6119CCF9F900D2DB53 /* Images.xcassets */; };
@@ -53,6 +54,7 @@
 		0BF5F3C81D5C19BA008663A4 /* CuisineCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CuisineCategoryCell.xib; sourceTree = "<group>"; };
 		0BF5F3CD1D5C3B1C008663A4 /* SortOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortOptions.swift; sourceTree = "<group>"; };
 		0BF5F3CF1D5C3C1A008663A4 /* SortOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortOptionCell.swift; sourceTree = "<group>"; };
+		0BF5F3D31D5DAC20008663A4 /* YelpSwitchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpSwitchButton.swift; sourceTree = "<group>"; };
 		222D8A5519CCF9F900D2DB53 /* Yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222D8A5919CCF9F900D2DB53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				0BF5F3C01D5C198C008663A4 /* DistanceCell.xib */,
 				0BF5F3C71D5C19BA008663A4 /* CuisineCategoryCell.swift */,
 				0BF5F3C81D5C19BA008663A4 /* CuisineCategoryCell.xib */,
+				0BF5F3D31D5DAC20008663A4 /* YelpSwitchButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				0BF5F3C91D5C19BA008663A4 /* CuisineCategoryCell.swift in Sources */,
 				0B55E29E1D595B0000B5BD65 /* BusinessCell.swift in Sources */,
 				0BF5F3B61D5AFEF8008663A4 /* CuisineFilters.swift in Sources */,
+				0BF5F3D41D5DAC20008663A4 /* YelpSwitchButton.swift in Sources */,
 				22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */,
 				0B55E2A21D5A6C1600B5BD65 /* FiltersViewController.swift in Sources */,
 				22AAAA991AEA0A9700A544AF /* Business.swift in Sources */,
