@@ -12,10 +12,16 @@ import AFNetworking
 import BDBOAuth1Manager
 
 // You can register for Yelp API keys here: http://www.yelp.com/developers/manage_api_keys
-let yelpConsumerKey = "vxKwwcR_NMQ7WaEiQBK_CA"
-let yelpConsumerSecret = "33QCvh5bIF5jIHR5klQr7RtBDhQ"
-let yelpToken = "uRcRswHFYa1VkDrGV6LAW2F8clGh5JHV"
-let yelpTokenSecret = "mqtKIxMIR4iBtBPZCmCLEb-Dz3Y"
+//let yelpConsumerKey = "vxKwwcR_NMQ7WaEiQBK_CA"
+//let yelpConsumerSecret = "33QCvh5bIF5jIHR5klQr7RtBDhQ"
+//let yelpToken = "uRcRswHFYa1VkDrGV6LAW2F8clGh5JHV"
+//let yelpTokenSecret = "mqtKIxMIR4iBtBPZCmCLEb-Dz3Y"
+
+let yelpConsumerKey = "o1vKyc34iD0CT8GSfyhaJw"
+let yelpConsumerSecret = "MV8zuf4KVTptVly_rirMd4Loid0"
+let yelpToken = "gsVie2D9qroROv6qmtQ7pA7VGX0g1TfD"
+let yelpTokenSecret = "RQiwMPm5hOLgZATIJi8RXr_EwRk"
+
 
 enum YelpSortMode: Int {
     case BestMatched = 0, Distance, HighestRated
@@ -52,10 +58,10 @@ class YelpClient: BDBOAuth1RequestOperationManager {
     }
     
     func searchWithTerm(term: String, completion: ([Business]!, NSError!) -> Void) -> AFHTTPRequestOperation {
-        return searchWithTerm(term, sort: nil, categories: nil, deals: nil, completion: completion)
+        return searchWithTerm(term, sort: nil, categories: nil, deals: nil, distance: 40000, completion: completion)
     }
     
-    func searchWithTerm(term: String, sort: YelpSortMode?, categories: [String]?, deals: Bool?, completion: ([Business]!, NSError!) -> Void) -> AFHTTPRequestOperation {
+    func searchWithTerm(term: String, sort: YelpSortMode?, categories: [String]?, deals: Bool?, distance: Float, completion: ([Business]!, NSError!) -> Void) -> AFHTTPRequestOperation {
         // For additional parameters, see http://www.yelp.com/developers/documentation/v2/search_api
 
         // Default the location to San Francisco
@@ -72,6 +78,8 @@ class YelpClient: BDBOAuth1RequestOperationManager {
         if deals != nil {
             parameters["deals_filter"] = deals!
         }
+
+        parameters["radius_filter"] = distance
         
         print(parameters)
         

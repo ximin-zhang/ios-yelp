@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B55E29E1D595B0000B5BD65 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B55E29D1D595B0000B5BD65 /* BusinessCell.swift */; };
+		0B55E2A01D5A696300B5BD65 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B55E29F1D5A696300B5BD65 /* SwitchCell.swift */; };
+		0B55E2A21D5A6C1600B5BD65 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B55E2A11D5A6C1600B5BD65 /* FiltersViewController.swift */; };
+		0BF5F3B61D5AFEF8008663A4 /* CuisineFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F3B51D5AFEF8008663A4 /* CuisineFilters.swift */; };
+		0BF5F3BE1D5C06DB008663A4 /* DistanceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F3BD1D5C06DB008663A4 /* DistanceFilter.swift */; };
+		0BF5F3C11D5C198C008663A4 /* DistanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F3BF1D5C198C008663A4 /* DistanceCell.swift */; };
+		0BF5F3C21D5C198C008663A4 /* DistanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5F3C01D5C198C008663A4 /* DistanceCell.xib */; };
+		0BF5F3C91D5C19BA008663A4 /* CuisineCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F3C71D5C19BA008663A4 /* CuisineCategoryCell.swift */; };
+		0BF5F3CA1D5C19BA008663A4 /* CuisineCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5F3C81D5C19BA008663A4 /* CuisineCategoryCell.xib */; };
+		0BF5F3CE1D5C3B1C008663A4 /* SortOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F3CD1D5C3B1C008663A4 /* SortOptions.swift */; };
+		0BF5F3D01D5C3C1A008663A4 /* SortOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F3CF1D5C3C1A008663A4 /* SortOptionCell.swift */; };
 		222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */; };
 		222D8A6019CCF9F900D2DB53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A5E19CCF9F900D2DB53 /* Main.storyboard */; };
 		222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A6119CCF9F900D2DB53 /* Images.xcassets */; };
@@ -31,6 +42,17 @@
 
 /* Begin PBXFileReference section */
 		0A1000F3975EB43318C1D4FA /* Pods_YelpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B55E29D1D595B0000B5BD65 /* BusinessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		0B55E29F1D5A696300B5BD65 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		0B55E2A11D5A6C1600B5BD65 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		0BF5F3B51D5AFEF8008663A4 /* CuisineFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineFilters.swift; sourceTree = "<group>"; };
+		0BF5F3BD1D5C06DB008663A4 /* DistanceFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceFilter.swift; sourceTree = "<group>"; };
+		0BF5F3BF1D5C198C008663A4 /* DistanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceCell.swift; sourceTree = "<group>"; };
+		0BF5F3C01D5C198C008663A4 /* DistanceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistanceCell.xib; sourceTree = "<group>"; };
+		0BF5F3C71D5C19BA008663A4 /* CuisineCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineCategoryCell.swift; sourceTree = "<group>"; };
+		0BF5F3C81D5C19BA008663A4 /* CuisineCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CuisineCategoryCell.xib; sourceTree = "<group>"; };
+		0BF5F3CD1D5C3B1C008663A4 /* SortOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortOptions.swift; sourceTree = "<group>"; };
+		0BF5F3CF1D5C3C1A008663A4 /* SortOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortOptionCell.swift; sourceTree = "<group>"; };
 		222D8A5519CCF9F900D2DB53 /* Yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222D8A5919CCF9F900D2DB53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +93,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B55E29C1D595ADB00B5BD65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F3CF1D5C3C1A008663A4 /* SortOptionCell.swift */,
+				0B55E29D1D595B0000B5BD65 /* BusinessCell.swift */,
+				0B55E29F1D5A696300B5BD65 /* SwitchCell.swift */,
+				0BF5F3BF1D5C198C008663A4 /* DistanceCell.swift */,
+				0BF5F3C01D5C198C008663A4 /* DistanceCell.xib */,
+				0BF5F3C71D5C19BA008663A4 /* CuisineCategoryCell.swift */,
+				0BF5F3C81D5C19BA008663A4 /* CuisineCategoryCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		222D8A4C19CCF9F900D2DB53 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +130,7 @@
 		222D8A5719CCF9F900D2DB53 /* Yelp */ = {
 			isa = PBXGroup;
 			children = (
+				0B55E29C1D595ADB00B5BD65 /* Views */,
 				22AAAA9A1AEA0AA100A544AF /* Models */,
 				222D8A7A19CCFAAA00D2DB53 /* API */,
 				22AAAA9D1AEA1EC600A544AF /* View Controllers */,
@@ -143,6 +180,9 @@
 			isa = PBXGroup;
 			children = (
 				22AAAA981AEA0A9700A544AF /* Business.swift */,
+				0BF5F3B51D5AFEF8008663A4 /* CuisineFilters.swift */,
+				0BF5F3BD1D5C06DB008663A4 /* DistanceFilter.swift */,
+				0BF5F3CD1D5C3B1C008663A4 /* SortOptions.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -151,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */,
+				0B55E2A11D5A6C1600B5BD65 /* FiltersViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -183,12 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 222D8A7419CCF9F900D2DB53 /* Build configuration list for PBXNativeTarget "Yelp" */;
 			buildPhases = (
-				F9B4AEA0288D56A32EA870A3 /* 📦 Check Pods Manifest.lock */,
+				F9B4AEA0288D56A32EA870A3 /* [CP] Check Pods Manifest.lock */,
 				222D8A5119CCF9F900D2DB53 /* Sources */,
 				222D8A5219CCF9F900D2DB53 /* Frameworks */,
 				222D8A5319CCF9F900D2DB53 /* Resources */,
-				50F492C5FB14C2003E718129 /* 📦 Embed Pods Frameworks */,
-				3F40E8B139A4200DC63F903F /* 📦 Copy Pods Resources */,
+				50F492C5FB14C2003E718129 /* [CP] Embed Pods Frameworks */,
+				3F40E8B139A4200DC63F903F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,12 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 222D8A7719CCF9F900D2DB53 /* Build configuration list for PBXNativeTarget "YelpTests" */;
 			buildPhases = (
-				4715C2A2570725C12BD6ECF8 /* 📦 Check Pods Manifest.lock */,
+				4715C2A2570725C12BD6ECF8 /* [CP] Check Pods Manifest.lock */,
 				222D8A6619CCF9F900D2DB53 /* Sources */,
 				222D8A6719CCF9F900D2DB53 /* Frameworks */,
 				222D8A6819CCF9F900D2DB53 /* Resources */,
-				4AE591C62421400E9E10FDCC /* 📦 Embed Pods Frameworks */,
-				A9E76197B79DDDAD935FAB8F /* 📦 Copy Pods Resources */,
+				4AE591C62421400E9E10FDCC /* [CP] Embed Pods Frameworks */,
+				A9E76197B79DDDAD935FAB8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,9 +305,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF5F3C21D5C198C008663A4 /* DistanceCell.xib in Resources */,
 				222D8A6019CCF9F900D2DB53 /* Main.storyboard in Resources */,
 				222D8A6519CCF9F900D2DB53 /* LaunchScreen.xib in Resources */,
 				222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */,
+				0BF5F3CA1D5C19BA008663A4 /* CuisineCategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,14 +323,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3F40E8B139A4200DC63F903F /* 📦 Copy Pods Resources */ = {
+		3F40E8B139A4200DC63F903F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,14 +338,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yelp/Pods-Yelp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4715C2A2570725C12BD6ECF8 /* 📦 Check Pods Manifest.lock */ = {
+		4715C2A2570725C12BD6ECF8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,14 +353,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4AE591C62421400E9E10FDCC /* 📦 Embed Pods Frameworks */ = {
+		4AE591C62421400E9E10FDCC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,14 +368,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YelpTests/Pods-YelpTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		50F492C5FB14C2003E718129 /* 📦 Embed Pods Frameworks */ = {
+		50F492C5FB14C2003E718129 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,14 +383,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yelp/Pods-Yelp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A9E76197B79DDDAD935FAB8F /* 📦 Copy Pods Resources */ = {
+		A9E76197B79DDDAD935FAB8F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,14 +398,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YelpTests/Pods-YelpTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F9B4AEA0288D56A32EA870A3 /* 📦 Check Pods Manifest.lock */ = {
+		F9B4AEA0288D56A32EA870A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,10 +420,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF5F3C11D5C198C008663A4 /* DistanceCell.swift in Sources */,
+				0BF5F3BE1D5C06DB008663A4 /* DistanceFilter.swift in Sources */,
+				0BF5F3C91D5C19BA008663A4 /* CuisineCategoryCell.swift in Sources */,
+				0B55E29E1D595B0000B5BD65 /* BusinessCell.swift in Sources */,
+				0BF5F3B61D5AFEF8008663A4 /* CuisineFilters.swift in Sources */,
 				22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */,
+				0B55E2A21D5A6C1600B5BD65 /* FiltersViewController.swift in Sources */,
 				22AAAA991AEA0A9700A544AF /* Business.swift in Sources */,
+				0BF5F3CE1D5C3B1C008663A4 /* SortOptions.swift in Sources */,
 				222D8A7D19CCFAE000D2DB53 /* YelpClient.swift in Sources */,
 				222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */,
+				0B55E2A01D5A696300B5BD65 /* SwitchCell.swift in Sources */,
+				0BF5F3D01D5C3C1A008663A4 /* SortOptionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

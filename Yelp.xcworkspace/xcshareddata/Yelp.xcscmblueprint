@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5E90F68A7CCE5E88EE12B1F7953ABF55B91463BC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E347FE568902197079700D971CB08D7E87306E3B" : 0,
+    "5E90F68A7CCE5E88EE12B1F7953ABF55B91463BC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4E90DEBD-9FEB-4AA4-992F-6ACB5E28D6B9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E347FE568902197079700D971CB08D7E87306E3B" : "..",
+    "5E90F68A7CCE5E88EE12B1F7953ABF55B91463BC" : "Yelp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Yelp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Yelp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:codepath\/ios_yelp_swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5E90F68A7CCE5E88EE12B1F7953ABF55B91463BC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ximin-zhang\/ios-flicks",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E347FE568902197079700D971CB08D7E87306E3B"
+    }
+  ]
+}

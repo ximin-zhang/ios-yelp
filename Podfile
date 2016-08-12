@@ -14,4 +14,6 @@ target 'Yelp' do
     # Pods for testing
   end
 
+  pod 'SwiftForms'
+
 end
